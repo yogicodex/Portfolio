@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" live-server content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 
@@ -12,12 +12,12 @@
 
 <body>
     <div class="container">
-        <section class="section-home">
+        <section class="section-home" id="home">
             <div class="nav-bar">
                 <nav class="nav">
                     <div class="nav-logo">
                         <div class="logo">
-                            <img src="/images/profile.jpg" alt="">
+                            <a class="links" href="#home"><img src="/images/profile.jpg" alt=""></a>
                         </div>
                         <p>Yogesh Pandey</p>
                     </div>
@@ -28,14 +28,15 @@
 
                 <div>
                     <ul class="nav-list">
-                        <li>Home</li>
-                        <li>About</li>
-
-                        <li>Experience</li>
-                        <li>Projects</li>
-                        <li>Skills</li>
-                        <li>Resume</li>
-                        <li>Contact</li>
+                        <li> <a class="links" href="#home">Home</a></li>
+                        <li><a class="links" href="#about">About</a> </li>
+                        <li><a class="links" href="#experience">Experience</a></li>
+                        <li><a class="links" href="#projects">Projects</a></li>
+                        <li><a class="links" href="#skills">Skills</a></li>
+                        <li><a
+                                href="https://drive.google.com/u/1/uc?id=1WlOI4awZjkSlt9JRjbPTDJnJXXt3wJ7Z&export=download">Resume</a>
+                        </li>
+                        <li><a class="links" href="#contacts">Contacts</a></li>
                     </ul>
                 </div>
             </div>
@@ -45,7 +46,7 @@
             <div class="hero-container">
                 <div class="hero-header">
                     <h1>Yogesh Pandey</h1>
-                    <p>I'm <span class="span-me">Developer</span></p>
+                    <p>I'm <span class="span-me"></span></p>
                 </div>
                 <div class="profiles-on">
                     <div>
@@ -64,10 +65,14 @@
                                 class="social-icons"></ion-icon></a>
                     </div>
                 </div>
+                <div>
+                    <a href="https://drive.google.com/u/1/uc?id=1WlOI4awZjkSlt9JRjbPTDJnJXXt3wJ7Z&export=download"
+                        download target="_blank" class="download-btn">Download Resume</a>
+                </div>
             </div>
         </section>
 
-        <section class="section-about">
+        <section class="section-about" id="about">
 
             <h3>ABOUT &#11835&#11835</h3>
             <div class="about-container">
@@ -159,7 +164,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-experience">
+        <section class="section-experience" id="experience">
             <h3>EXPERIENCE &#11835&#11835</h3>
             <div class="experience-container">
                 <div class="experience">
@@ -191,6 +196,10 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <!-- local script -->
+    <script src="script.js"></script>
+
 </body>
 
 </html>
